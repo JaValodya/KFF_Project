@@ -1,5 +1,5 @@
 This file contains instructions for managing  
-the project "SkyWereInwentoryProject" as a team:
+the project "KFF_Project" as a team:
 ================================================
 Git Network:
 
@@ -10,18 +10,40 @@ master branch --------------------------------------------------->
             kamil branch ---------------------------------------->
             fatih branch ---------------------------------------->
             volodymyr branch ------------------------------------>
+            Anjad branch ---------------------------------------->
 
 Working in the git network:
+   
 
-     --Please work only at the branch with your name;
-       Hint: 
-            +1+ to check available branches use command "git branch" (branch you are currently in 
-                will be highlighted in green)  
-            +2+ to switch between branch use command "git checkout [branch name]"
-                ([branch name] - name of the branch you want to switch to )
-                
-     -- use "git add" and "git push" only to the branch with your name;
-     -- Please do not commit to the 'workingbranch' or 'muster' branches;
-     -- Before starting work on the project make sure you have the latest version of the project:
-        Step 1: run "git pull" commant when you are on the 'workingbranch' ( See Hint: +2+)
+Starting Work(Before doing any changes
+              in your environment):
+   1. git branch                         - checks witch branch you are on locally 
+   2. git checkout workingbranch         - switches to workingbranch(on your machine) 
+   3. git pull                           - pulls changes from workingbranch(on github) to workingbranch(on your machine) 
+   4. git chechout [your name branch]    - switches to your branch(on your machine)
+   5. git merge workingbranch            - copies all the changes form the workingbranch(on your machine) to yourBranch(on your machine) 
+   6. git push                           - pushes newly recieved code to yourBranch(on github)
+
+(Only now you are ready to start working on you code)
+Working on your branch:
+   git status            
+   git add *
+           .
+           file name
+   git commit -m "[message]"             - pushes changest to yourBranch(on your machine) 
+   git push                              - pushes changest to yourBranch(on github)
+
+
+After working on the code:
+   9. git branch                         - checks witch branch you are on locally 
+  10. git chechout workingbranch         - switches to workingbranch(on your machine) 
+  11. git pull                           - pulls changes from workingbranch(on github) to workingbranch(on your machine)
+  12. git merge [your name branch]       - copies all the changes form the yourBranch(on your machine) to workingbranch(on your machine) 
+      12a. solve the conflict            - if the conflict pups up, resolve it 
+      12b. git commit -m "..."           - after conflict resolved commit the conflict
+  13. git push                           - pushes code with your code(the one you just finished working with) and resolved conflict to workingbranch(on github)
+  14. git checkout [your name]           - switches to yourBranch(on your machine)
+  15. git merge workingbranch            - copies all the changes form the workingbranch(on your machine) to yourBranch(on your machine) 
+  16. git push                           - pushes newly recieved code to yourBranch(on github)
+
        
