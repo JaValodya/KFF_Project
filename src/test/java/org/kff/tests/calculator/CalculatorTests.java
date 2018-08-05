@@ -21,7 +21,7 @@ import org.testng.annotations.Test;
 
 public class CalculatorTests extends TestBase{
  BrowserUtils wait = new BrowserUtils();
-	@Ignore 
+	//@Ignore 
 	@Test(priority = 1)
 	public void default_values_785 () throws InterruptedException {
 	HomePage homePage = new HomePage();
@@ -104,7 +104,7 @@ public class CalculatorTests extends TestBase{
 	assertEquals(expected, actual);
 	}
 
-	//@Ignore 
+	@Ignore 
 	@Test(priority = 3)
 	public void state_changing_zip_functionality_789 () throws InterruptedException {
 	HealthInsuranceMarketplaceCalculatorPage calculator = new HealthInsuranceMarketplaceCalculatorPage();
