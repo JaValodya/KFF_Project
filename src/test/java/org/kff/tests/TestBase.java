@@ -27,6 +27,13 @@ public abstract class TestBase {
 	protected ExtentReports report;
 	protected ExtentHtmlReporter htmlReporter;
 	protected ExtentTest extentLogger;
+	protected String expectedCalculatorPageTitle = "Health Insurance Marketplace Calculator | The Henry J. Kaiser Family Foundation";
+	protected String expectedHomePagetTitle = "Kaiser Family Foundation - Health Policy Research, Analysis, Polling, Facts, Data and Journalism";
+	protected String actual = "";
+	protected String expected = "";
+	protected String expected2 = "";
+
+	
 	
 	@BeforeTest
 	public void setUpTest() {
@@ -55,7 +62,7 @@ public abstract class TestBase {
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.manage().window().fullscreen();
 
-		driver.get(ConfigurationReader.getProperty("url"));
+		driver.get(ConfigurationReader.getProperty("homePageUrl"));
 
 	}
 

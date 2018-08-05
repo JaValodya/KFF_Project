@@ -11,7 +11,15 @@ public class HomePage {
 		PageFactory.initElements(Driver.getDriver(), this);
 	}
 
-	@FindBy(className = "menu")
+	@FindBy(xpath = "//*[text()='menu']")
 	public WebElement menuButton;
+	
+	@FindBy(xpath = "//li[@id='menu-item-185321']/a")
+	public WebElement PrivateInsurance;
+	
+	@FindBy (xpath = "//*[@id=\'hs-eu-confirmation-button\']")
+	public WebElement cookiesAcceptBunnon;
+	
+	
 
 }
