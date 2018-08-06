@@ -11,7 +11,14 @@ public class HomePage {
 		PageFactory.initElements(Driver.getDriver(), this);
 	}
 
-	@FindBy(className = "menu")
+	@FindBy(xpath = "//a[@class='menu']")
 	public WebElement menuButton;
+	
+	@FindBy(linkText = "Private Insurance")
+	public WebElement PrivateIsuranceLink;
+	
+	@FindBy(linkText="2018 Health Insurance Marketplace Calculator")
+	public WebElement Calculator;
+	
 
 }

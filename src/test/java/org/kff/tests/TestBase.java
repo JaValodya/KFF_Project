@@ -44,7 +44,7 @@ public abstract class TestBase {
 		report.setSystemInfo("ENV", "staging");
 		report.setSystemInfo("browser", ConfigurationReader.getProperty("browser"));
 		report.setSystemInfo("OS", System.getProperty("os.name"));
-
+		
 		htmlReporter.config().setReportName("Web Orders Automated Test Reports");
 	}
 
