@@ -11,37 +11,28 @@ public class HomePage {
 		PageFactory.initElements(Driver.getDriver(), this);
 	}
 
-
-	
-	
 	@FindBy(xpath = "//li[@id='menu-item-185321']/a")
 	public WebElement PrivateInsurance;
-	
-	@FindBy (xpath = "//*[@id=\'hs-eu-confirmation-button\']")
+
+	@FindBy(xpath = "//*[@id=\'hs-eu-confirmation-button\']")
 	public WebElement cookiesAcceptBunnon;
-	
-	
 
-   @FindBy(xpath="//a[@class='menu']")
-    public WebElement menuButton;
-	@FindBy(xpath=("//a[@href='#'])[2]"))
-    public WebElement tpicButton;
-	@FindBy(xpath= "(//a[@href='/statedata'])[1]")
+	@FindBy(xpath = "//a[@class='menu']")
+	public WebElement menuButton;
+
+	@FindBy(xpath = ("//a[@href='#'])[2]"))
+	public WebElement tpicButton;
+
+	@FindBy(xpath = "(//a[@href='/statedata'])[1]")
 	public WebElement MenuStatebutton;
-	@FindBy(id="hs-eu-confirmation-button")
-	public WebElement AcceptCokisBotton ;
-	@FindBy(xpath="//*[@id=\"menu-item-254102\"]/a")
-	public WebElement stateButtonclick ;
-	
-	
-	
 
+	@FindBy(id = "hs-eu-confirmation-button")
+	public WebElement AcceptCokisBotton;
 
+	@FindBy(xpath = "//*[@id=\"menu-item-254102\"]/a")
+	public WebElement stateButtonclick;
 
-
-//@FindBy(xpath = "//*[text()='menu']")
-//public WebElement menuButton;
-
-
+	// @FindBy(xpath = "//*[text()='menu']")
+	// public WebElement menuButton;
 
 }

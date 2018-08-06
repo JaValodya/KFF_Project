@@ -73,6 +73,5 @@ public class HealthInsuranceMarketplaceCalculatorPage {
 		
 	}	
 
-// hi kamil this is my changes
 
 
