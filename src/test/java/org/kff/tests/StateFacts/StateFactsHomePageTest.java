@@ -9,6 +9,7 @@ import org.kff.tests.TestBase;
 import org.kff.utilities.BrowserUtils;
 import org.kff.pages.Demographic_EconomyPage;
 import org.kff.pages.HealthCostsBudgetsPage;
+import org.kff.pages.HealthInsuranceMarketplaceCalculatorPage;
 import org.kff.pages.HomePage;
 import org.kff.pages.StateFactsHomePage;
 import org.kff.pages.StateFacts_AlaBamaPage;
@@ -18,46 +19,13 @@ import org.openqa.selenium.By;
 import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
-//public class StateFactsHomePageTest extends TestBase{
-//	StateFactsHomePage homepage=new StateFactsHomePage();
-//	HomePage hp=new HomePage();
-//	
-//	@Test
-//	public void HomePgeTitleTest_1197() {
-//		String expected="Kaiser Family Foundation - Health Policy Research, Analysis, Polling, Facts, Data and Journalism";
-//		assertEquals(driver.getTitle(), expected);
-//		hp.AcceptCokisBotton.click();
-//	}
-//@Test
-//	public void StatFactsPagetest() {
-//    driver.get(ConfigurationReader.getProperty("StatefactsURL"));
-//	assertTrue( homepage.SearchStateText.isDisplayed());
-//		assertTrue(homepage.ChooseCategory.isDisplayed());
-//		
-//	}
-//
-//  @Test
-//  public void thisYearAssertion_1196() throws Exception {
-//	  hp.menuButton.click();
-//	 Thread.sleep(1000);
-//	 hp.AcceptCokisBotton.click();
-//	 driver.findElement(By.xpath("(//a[@href='#'])[2]")).click();
-//	 Thread.sleep(1000);
-//	  hp.MenuStatebutton.click();
-//		 Thread.sleep(1000);
-//
-//	  hp.stateButtonclick.click();
-//	  assertTrue(homepage.ChooseCategory.isDisplayed());
-//  }
-//
-//
-//}
 public class StateFactsHomePageTest extends TestBase {
 	StateFactsHomePage homepage = new StateFactsHomePage();
 	HomePage hp = new HomePage();
 	StateFacts_AlaBamaPage sfap = new StateFacts_AlaBamaPage();
 	HealthCostsBudgetsPage hcbp = new HealthCostsBudgetsPage();
 	Demographic_EconomyPage dep = new Demographic_EconomyPage();
+	HealthInsuranceMarketplaceCalculatorPage himcp = new HealthInsuranceMarketplaceCalculatorPage();
 	
 //	@Ignore
 	@Test
@@ -161,7 +129,7 @@ public class StateFactsHomePageTest extends TestBase {
 		
 		assertTrue(homepage.links.isEnabled());
 	}
-	@Ignore
+//	@Ignore
 	@Test
 	public void smokeTest_1195() throws InterruptedException {
 		hp.menuButton.click();
@@ -176,7 +144,9 @@ public class StateFactsHomePageTest extends TestBase {
 		
 		assertTrue(homepage.SearchStateText.isDisplayed());
 		driver.get(ConfigurationReader.getProperty("homePageUrl"));
-		//Step 5 and step 6 will be added here
+		driver.get(ConfigurationReader.getProperty("CalculatorUrl"));
+		assertTrue(himcp.enterInformationAboutYourHouseholdField.isEnabled());
+		
 	
 	}
 

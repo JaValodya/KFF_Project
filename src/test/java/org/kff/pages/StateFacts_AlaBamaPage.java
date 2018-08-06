@@ -15,7 +15,7 @@ public class StateFacts_AlaBamaPage {
 	
 	 @FindBy(xpath="//a[@href='https://www.kff.org/state-category/demographics-and-the-economy/?state=al']")
 	 public WebElement AlaBamaCategory_1;
-	 @FindBy(xpath="//a[@href='https://www.kff.org/state-category/health-costs-budgets/?state=al'']")
+	 @FindBy(xpath="//a[@href='https://www.kff.org/state-category/health-costs-budgets/?state=al']")
 	 public WebElement AlaBamaCategory_2;
 	 @FindBy(xpath="//a[@href='https://www.kff.org/state-category/health-coverage-uninsured/?state=al']")
 	 public WebElement AlaBamaCategory_3;
