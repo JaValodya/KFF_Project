@@ -1,7 +1,5 @@
 package org.kff.pages;
 
-import javax.lang.model.element.Element;
-
 import org.kff.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -22,6 +20,11 @@ public class StateFactsHomePage {
 	 public WebElement NEWUPDATEDSText;
 	 @FindBy(xpath="//p[@class='byline']")
 	 public WebElement NewsDate;
+	 
+	 
+	 
+	 
+	 
 	 @FindBy(xpath="//*[@id=\"state-health-wrapper\"]/div[3]/div[3]/div[1]/h3/a")
 	 public WebElement Section_1115;
 	 
@@ -56,11 +59,10 @@ public class StateFactsHomePage {
 	@FindBy(xpath="//option[@value='AL']")
 	public WebElement SelectAlAbama;
 	
-	 
-	 
-	 
-	 
+	@FindBy(xpath="//a[@href]")
+	 public WebElement links;
 	
+	 
 	 
 
 }

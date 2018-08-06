@@ -13,6 +13,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Ignore;
+import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -54,18 +56,19 @@ public abstract class TestBase {
 
 		htmlReporter.config().setReportName("Web Orders Automated Test Reports");
 	}
-
+	
 	@BeforeMethod(alwaysRun = true)
 	public void setUp() {
 		driver = Driver.getDriver();
 		actions = new Actions(driver);
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 //		driver.manage().window().fullscreen();
+
 		driver.get(ConfigurationReader.getProperty("homePageUrl"));
-	//	driver.get(ConfigurationReader.getProperty("homePageUrl"));
+
 
 	}
-
+	@Ignore
 	@AfterMethod(alwaysRun = true)
 	public void tearDown(ITestResult result) throws IOException {
 		// checking if the test method failed
@@ -87,7 +90,12 @@ public abstract class TestBase {
 		}
 		Driver.closeDriver();
 	}
-
+	@Ignore
+	@Test
+	public void myTest() {
+		driver.get(ConfigurationReader.getProperty("url"));
+	}
+	@Ignore
 	@AfterTest
 	public void tearDownTest() {
 		report.flush();

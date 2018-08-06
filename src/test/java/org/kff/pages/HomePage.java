@@ -34,13 +34,12 @@ public class HomePage {
 	public WebElement stateButtonclick ;
 	
 	
-	
 
 
 
 
-//@FindBy(xpath = "//*[text()='menu']")
-//public WebElement menuButton;
+
+
 
 
 
