@@ -52,7 +52,7 @@ public abstract class TestBase {
 		report.setSystemInfo("ENV", "staging");
 		report.setSystemInfo("browser", ConfigurationReader.getProperty("browser"));
 		report.setSystemInfo("OS", System.getProperty("os.name"));
-
+		
 		htmlReporter.config().setReportName("Web Orders Automated Test Reports");
 	}
 	
@@ -92,7 +92,7 @@ public abstract class TestBase {
 	@Ignore
 	@Test
 	public void myTest() {
-		driver.get(ConfigurationReader.getProperty("url"));
+		driver.get(ConfigurationReader.getProperty("homePageUrl"));
 	}
 	@Ignore
 	@AfterTest

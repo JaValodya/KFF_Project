@@ -11,8 +11,18 @@ public class HomePage {
 		PageFactory.initElements(Driver.getDriver(), this);
 	}
 
+
 	@FindBy(xpath = "//li[@id='menu-item-185321']/a")
 	public WebElement PrivateInsurance;
+
+	
+	@FindBy(linkText = "Private Insurance")
+	public WebElement PrivateIsuranceLink;
+	
+	@FindBy(linkText="2018 Health Insurance Marketplace Calculator")
+	public WebElement Calculator;
+	
+
 
 	@FindBy(xpath = "//*[@id=\'hs-eu-confirmation-button\']")
 	public WebElement cookiesAcceptBunnon;
