@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="KFF.org test cases execution" verbose="2">
+
+	<test name="All the tests">
+		<packages>
+			<package name="org.kff.tests.calculator"></package>
+			<package name="org.kff.tests.StateFacts"></package>
+		</packages>
+	</test>
+
+</suite>
