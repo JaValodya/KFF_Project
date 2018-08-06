@@ -49,7 +49,6 @@ public abstract class TestBase {
 		htmlReporter = new ExtentHtmlReporter(filePath);
 
 		report.attachReporter(htmlReporter);
-
 		report.setSystemInfo("ENV", "staging");
 		report.setSystemInfo("browser", ConfigurationReader.getProperty("browser"));
 		report.setSystemInfo("OS", System.getProperty("os.name"));
@@ -88,7 +87,7 @@ public abstract class TestBase {
 		} else if (result.getStatus() == ITestResult.SKIP) {
 			extentLogger.skip("Test Case Skipped is " + result.getName());
 		}
-		Driver.closeDriver();
+		//Driver.closeDriver();
 	}
 	@Ignore
 	@Test
