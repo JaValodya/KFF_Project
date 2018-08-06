@@ -35,7 +35,7 @@ public class StateFactsHomePageTest extends TestBase {
 		hp.AcceptCokisBotton.click();
 	}
 
-//	@Ignore
+	@Ignore
 	@Test
 	public void StatFactsPagetest() {
 		driver.get(ConfigurationReader.getProperty("StatefactsURL"));
@@ -44,7 +44,7 @@ public class StateFactsHomePageTest extends TestBase {
 
 	}
 
-//	@Ignore
+	@Ignore
 	@Test
 	public void thisYearAssertion_1196() throws Exception {
 		hp.menuButton.click();
@@ -91,7 +91,7 @@ public class StateFactsHomePageTest extends TestBase {
 		assertTrue(sfap.AlaBamaCategory_11.isEnabled());
 		assertTrue(sfap.AlaBamaCategory_12.isEnabled());
 	}
-//	@Ignore
+	@Ignore
 	@Test
 	public void aToZ_1199() {
 		driver.get(ConfigurationReader.getProperty("StatefactsURL"));
@@ -101,7 +101,7 @@ public class StateFactsHomePageTest extends TestBase {
 		hcbp.Location.click();
 		assertTrue(hcbp.Wyoming.isEnabled());
 	}
-//	@Ignore
+	@Ignore
 	@Test
 	public void numOfResidents_1200() throws InterruptedException {
 		driver.get(ConfigurationReader.getProperty("StatefactsURL"));
@@ -129,7 +129,7 @@ public class StateFactsHomePageTest extends TestBase {
 		
 		assertTrue(homepage.links.isEnabled());
 	}
-//	@Ignore
+	@Ignore
 	@Test(groups = {"smoke"})
 	public void smokeTest_1195() throws InterruptedException {
 		hp.menuButton.click();
