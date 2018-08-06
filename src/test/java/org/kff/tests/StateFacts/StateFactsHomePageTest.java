@@ -130,7 +130,7 @@ public class StateFactsHomePageTest extends TestBase {
 		assertTrue(homepage.links.isEnabled());
 	}
 //	@Ignore
-	@Test
+	@Test(groups = {"smoke"})
 	public void smokeTest_1195() throws InterruptedException {
 		hp.menuButton.click();
 		Thread.sleep(1000);
