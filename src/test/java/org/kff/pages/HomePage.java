@@ -13,5 +13,5 @@ public class HomePage {
 
 	@FindBy(className = "menu")
 	public WebElement menuButton;
-
+	
 }
