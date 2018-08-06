@@ -61,7 +61,7 @@ public class CalculatorTests extends TestBase{
 	assertEquals(actual, expected);	
 	}
 	
-	@Ignore 
+	//@Ignore 
 	@Test(priority = 2)
 	public void yearly_household_income_field_691 () throws InterruptedException {
 	HealthInsuranceMarketplaceCalculatorPage calculator = new HealthInsuranceMarketplaceCalculatorPage();
@@ -96,15 +96,16 @@ public class CalculatorTests extends TestBase{
 	incomeExpectedOptions.add("2018 Dollars");
 	incomeExpectedOptions.add("% of Poverty");
 	assertEquals(incomeActualOptions , incomeExpectedOptions);
-	select2.selectByVisibleText(expected2);
+	expected = "% of Poverty";
+	select2.selectByVisibleText(expected);
 	actual = select2.getFirstSelectedOption().getText();
-	assertEquals(expected2, actual);
+	assertEquals(expected, actual);
 	expected = "% of Federal Poverty Level";
 	actual = calculator.householdIncomeText.getText();
 	assertEquals(expected, actual);
 	}
 
-	@Ignore 
+	//@Ignore 
 	@Test(priority = 3)
 	public void state_changing_zip_functionality_789 () throws InterruptedException {
 	HealthInsuranceMarketplaceCalculatorPage calculator = new HealthInsuranceMarketplaceCalculatorPage();
@@ -144,14 +145,6 @@ public class CalculatorTests extends TestBase{
 	expected = "Maryland";
 	assertEquals(actual, expected);
 	
-	
-	
-	
-	
-	
-	
-	
-		
 	}
 	
 	
